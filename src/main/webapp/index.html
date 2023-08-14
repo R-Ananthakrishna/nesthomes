@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/index.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div class="outer-container">
+        <div class="bgimage">
+            <img src="images/bgimage_2.jpg">
+
+        </div>
+        <div class="login">
+            <form id="loginForm" name="loginForm" method="post" action="Login">
+                <h1>WELCOME BACK!</h1>
+                <div class="icon-big">
+                    <i class="fa fa-user-circle fa-5x" ></i>
+                </div>
+                <h2>Log In</h2>
+                <i class="fa fa-user icon fa-fw" ></i>
+                <input type="text" placeholder="Username" id="uName" name="uName" >
+                <i class="fa fa-lock icon fa-fw" ></i>
+                <input type="password" placeholder="Password" id="pass" name="pass" >
+                <input type="submit" id="loginButton" name="loginButton" value="LOGIN" onclick="return valForm()">
+
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>NestHomes</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>login</servlet-name>
+  	<servlet-class>com.nesthomes.LoginCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>admin-home</servlet-name>
+  	<servlet-class>com.viewlist.AdminHomeView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>admin-home</servlet-name>
+  	<url-pattern>/AdminHomeView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>accountant-home</servlet-name>
+  	<servlet-class>com.viewlist.AccountantHomeView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>accountant-home</servlet-name>
+  	<url-pattern>/AccountantHomeView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>logout</servlet-name>
+  	<servlet-class>com.nesthomes.LogoutAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-user-details</servlet-name>
+  	<servlet-class>com.action.UserDetailsAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-user-details</servlet-name>
+  	<url-pattern>/User</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-user-details</servlet-name>
+  	<servlet-class>com.viewlist.UserDetailsViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-user-details</servlet-name>
+  	<url-pattern>/UserDetailsView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-user-details</servlet-name>
+  	<servlet-class>com.update.UserDetailsUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-user-details</servlet-name>
+  	<url-pattern>/UserDetailsUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-user-details</servlet-name>
+  	<servlet-class>com.update.UserDetailsUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-user-details</servlet-name>
+  	<url-pattern>/UserDetailsUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-user-details</servlet-name>
+  	<servlet-class>com.delete.UserDetailsDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-user-details</servlet-name>
+  	<url-pattern>/UserDetailsDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-user-details</servlet-name>
+  	<servlet-class>com.delete.UserDetailsDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-user-details</servlet-name>
+  	<url-pattern>/UserDetailsDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-dhc</servlet-name>
+  	<servlet-class>com.action.DailyHelpCategoryAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-dhc</servlet-name>
+  	<url-pattern>/DailyHelpCategory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-dhc</servlet-name>
+  	<servlet-class>com.viewlist.DailyHelpCategoryViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-dhc</servlet-name>
+  	<url-pattern>/DailyHelpCategoryView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-dhc</servlet-name>
+  	<servlet-class>com.update.DailyHelpCategoryUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-dhc</servlet-name>
+  	<url-pattern>/DailyHelpCategoryUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-dhc</servlet-name>
+  	<servlet-class>com.update.DailyHelpCategoryUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-dhc</servlet-name>
+  	<url-pattern>/DailyHelpCategoryUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-dhc</servlet-name>
+  	<servlet-class>com.delete.DailyHelpCategoryDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-dhc</servlet-name>
+  	<url-pattern>/DailyHelpCategoryDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-dhc</servlet-name>
+  	<servlet-class>com.delete.DailyHelpCategoryDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-dhc</servlet-name>
+  	<url-pattern>/DailyHelpCategoryDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-flat</servlet-name>
+  	<servlet-class>com.action.FlatAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-flat</servlet-name>
+  	<url-pattern>/FlatDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-flat</servlet-name>
+  	<servlet-class>com.viewlist.FlatViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-flat</servlet-name>
+  	<url-pattern>/FlatView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-flat</servlet-name>
+  	<servlet-class>com.update.FlatUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-flat</servlet-name>
+  	<url-pattern>/FlatUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-flat</servlet-name>
+  	<servlet-class>com.update.FlatUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-flat</servlet-name>
+  	<url-pattern>/FlatUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-flat</servlet-name>
+  	<servlet-class>com.delete.FlatDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-flat</servlet-name>
+  	<url-pattern>/FlatDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-flat</servlet-name>
+  	<servlet-class>com.delete.FlatDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-flat</servlet-name>
+  	<url-pattern>/FlatDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>gas-unit-rate</servlet-name>
+  	<servlet-class>com.action.GasUnitRateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gas-unit-rate</servlet-name>
+  	<url-pattern>/GasUnitRate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-gas-unit-rate</servlet-name>
+  	<servlet-class>com.viewlist.GasUnitRateViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-gas-unit-rate</servlet-name>
+  	<url-pattern>/GasUnitRateView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-gas-unit-rate</servlet-name>
+  	<servlet-class>com.update.GasUnitRateUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-gas-unit-rate</servlet-name>
+  	<url-pattern>/GasUnitRateUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-gas-unit-rate</servlet-name>
+  	<servlet-class>com.update.GasUnitRateUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-gas-unit-rate</servlet-name>
+  	<url-pattern>/GasUnitRateUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-gas-unit-rate</servlet-name>
+  	<servlet-class>com.delete.GasUnitRateDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-gas-unit-rate</servlet-name>
+  	<url-pattern>/GasUnitRateDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-gas-unit-rate</servlet-name>
+  	<servlet-class>com.delete.GasUnitRateDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-gas-unit-rate</servlet-name>
+  	<url-pattern>/GasUnitRateDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>facility-manager</servlet-name>
+  	<servlet-class>com.action.FacilityManagerAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>facility-manager</servlet-name>
+  	<url-pattern>/FacilityManager</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-facility-manager</servlet-name>
+  	<servlet-class>com.viewlist.FacilityManagerViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-facility-manager</servlet-name>
+  	<url-pattern>/FacilityManagerView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-facility-manager</servlet-name>
+  	<servlet-class>com.update.FacilityManagerUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-facility-manager</servlet-name>
+  	<url-pattern>/FacilityManagerUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-facility-manager</servlet-name>
+  	<servlet-class>com.update.FacilityManagerUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-facility-manager</servlet-name>
+  	<url-pattern>/FacilityManagerUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-facility-manager</servlet-name>
+  	<servlet-class>com.delete.FacilityManagerDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-facility-manager</servlet-name>
+  	<url-pattern>/FacilityManagerDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-facility-manager</servlet-name>
+  	<servlet-class>com.delete.FacilityManagerDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-facility-manager</servlet-name>
+  	<url-pattern>/FacilityManagerDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-owner-details</servlet-name>
+  	<servlet-class>com.action.OwnerDetailsAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-owner-details</servlet-name>
+  	<url-pattern>/OwnerDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-owner-details</servlet-name>
+  	<servlet-class>com.viewlist.OwnerDetailsViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-owner-details</servlet-name>
+  	<url-pattern>/OwnerDetailsView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-owner-details</servlet-name>
+  	<servlet-class>com.update.OwnerDetailsUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-owner-details</servlet-name>
+  	<url-pattern>/OwnerDetailsUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-owner-details</servlet-name>
+  	<servlet-class>com.update.OwnerDetailsUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-owner-details</servlet-name>
+  	<url-pattern>/OwnerDetailsUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-owner-details</servlet-name>
+  	<servlet-class>com.delete.OwnerDetailsDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-owner-details</servlet-name>
+  	<url-pattern>/OwnerDetailsDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-owner-details</servlet-name>
+  	<servlet-class>com.delete.OwnerDetailsDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-owner-details</servlet-name>
+  	<url-pattern>/OwnerDetailsDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-tenant-details</servlet-name>
+  	<servlet-class>com.action.TenantDetailsAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-tenant-details</servlet-name>
+  	<url-pattern>/TenantDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-tenant-details</servlet-name>
+  	<servlet-class>com.viewlist.TenantDetailsViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-tenant-details</servlet-name>
+  	<url-pattern>/TenantDetailsView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-tenant-details</servlet-name>
+  	<servlet-class>com.update.TenantDetailsUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-tenant-details</servlet-name>
+  	<url-pattern>/TenantDetailsUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-tenant-details</servlet-name>
+  	<servlet-class>com.update.TenantDetailsUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-tenant-details</servlet-name>
+  	<url-pattern>/TenantDetailsUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-tenant-details</servlet-name>
+  	<servlet-class>com.delete.TenantDetailsDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-tenant-details</servlet-name>
+  	<url-pattern>/TenantDetailsDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-tenant-details</servlet-name>
+  	<servlet-class>com.delete.TenantDetailsDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-tenant-details</servlet-name>
+  	<url-pattern>/TenantDetailsDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-daily-help</servlet-name>
+  	<servlet-class>com.action.DailyHelpAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-daily-help</servlet-name>
+  	<url-pattern>/DailyHelp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-daily-help</servlet-name>
+  	<servlet-class>com.viewlist.DailyHelpViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-daily-help</servlet-name>
+  	<url-pattern>/DailyHelpView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-daily-help</servlet-name>
+  	<servlet-class>com.update.DailyHelpUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-daily-help</servlet-name>
+  	<url-pattern>/DailyHelpUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-daily-help</servlet-name>
+  	<servlet-class>com.update.DailyHelpUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-daily-help</servlet-name>
+  	<url-pattern>/DailyHelpUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-daily-help</servlet-name>
+  	<servlet-class>com.delete.DailyHelpDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-daily-help</servlet-name>
+  	<url-pattern>/DailyHelpDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-daily-help</servlet-name>
+  	<servlet-class>com.delete.DailyHelpDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-daily-help</servlet-name>
+  	<url-pattern>/DailyHelpDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-payment</servlet-name>
+  	<servlet-class>com.action.PaymentAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-payment</servlet-name>
+  	<url-pattern>/Payment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-payment</servlet-name>
+  	<servlet-class>com.viewlist.PaymentViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-payment</servlet-name>
+  	<url-pattern>/PaymentView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-acc-payment</servlet-name>
+  	<servlet-class>com.action.AccPaymentAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-acc-payment</servlet-name>
+  	<url-pattern>/AccPayment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-acc-payment</servlet-name>
+  	<servlet-class>com.viewlist.AccPaymentViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-acc-payment</servlet-name>
+  	<url-pattern>/AccPaymentView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>calculate-total-payment</servlet-name>
+  	<servlet-class>com.dao.CalculateTotalDAO</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>calculate-total-payment</servlet-name>
+  	<url-pattern>/TotalDues</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.action.MonthlyGasUsageAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-monthly-gas-usage</servlet-name>
+  	<url-pattern>/MonthlyGasUsage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.viewlist.MonthlyGasUsageViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-monthly-gas-usage</servlet-name>
+  	<url-pattern>/MonthlyGasUsageView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.update.MonthlyGasUsageUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-monthly-gas-usage</servlet-name>
+  	<url-pattern>/MonthlyGasUsageUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.update.MonthlyGasUsageUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-monthly-gas-usage</servlet-name>
+  	<url-pattern>/MonthlyGasUsageUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.delete.MonthlyGasUsageDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-monthly-gas-usage</servlet-name>
+  	<url-pattern>/MonthlyGasUsageDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.delete.MonthlyGasUsageDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-monthly-gas-usage</servlet-name>
+  	<url-pattern>/MonthlyGasUsageDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-acc-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.action.AccMonthlyGasUsageAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-acc-monthly-gas-usage</servlet-name>
+  	<url-pattern>/AccMonthlyGasUsage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-acc-monthly-gas-usage</servlet-name>
+  	<servlet-class>com.viewlist.AccMonthlyGasUsageViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-acc-monthly-gas-usage</servlet-name>
+  	<url-pattern>/AccMonthlyGasUsageView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-ownership</servlet-name>
+  	<servlet-class>com.action.OwnershipAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-ownership</servlet-name>
+  	<url-pattern>/Ownership</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-ownership</servlet-name>
+  	<servlet-class>com.viewlist.OwnershipViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-ownership</servlet-name>
+  	<url-pattern>/OwnershipView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-ownership</servlet-name>
+  	<servlet-class>com.update.OwnershipUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-ownership</servlet-name>
+  	<url-pattern>/OwnershipUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-ownership</servlet-name>
+  	<servlet-class>com.update.OwnershipUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-ownership</servlet-name>
+  	<url-pattern>/OwnershipUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-ownership</servlet-name>
+  	<servlet-class>com.delete.OwnershipDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-ownership</servlet-name>
+  	<url-pattern>/OwnershipDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-ownership</servlet-name>
+  	<servlet-class>com.delete.OwnershipDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-ownership</servlet-name>
+  	<url-pattern>/OwnershipDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insert-rental</servlet-name>
+  	<servlet-class>com.action.RentalAddAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert-rental</servlet-name>
+  	<url-pattern>/Rental</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>list-rental</servlet-name>
+  	<servlet-class>com.viewlist.RentalViewAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>list-rental</servlet-name>
+  	<url-pattern>/RentalView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-rental</servlet-name>
+  	<servlet-class>com.update.RentalUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-rental</servlet-name>
+  	<url-pattern>/RentalUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>update-action-rental</servlet-name>
+  	<servlet-class>com.update.RentalUpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update-action-rental</servlet-name>
+  	<url-pattern>/RentalUpdateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-rental</servlet-name>
+  	<servlet-class>com.delete.RentalDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-rental</servlet-name>
+  	<url-pattern>/RentalDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>delete-action-rental</servlet-name>
+  	<servlet-class>com.delete.RentalDeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete-action-rental</servlet-name>
+  	<url-pattern>/RentalDeleteAction</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
